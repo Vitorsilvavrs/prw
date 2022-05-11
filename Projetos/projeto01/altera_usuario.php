@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <title>Cadastro de usuário</title>
     <h1>Alteração de usuário</h1>
-    <form action="cadastro_usuario.php" method="post">
+        <form method="post" action="altera_usuario_exe.php">
         <table>
             <tr>
                 <th colspan="2">Cadastro de Clientes - IFSP</th>
@@ -37,7 +37,8 @@
             <tr>
                 <td colspan="2"><br><input type="submit" class="btnEnviar" value="Enviar"></td>
             </tr>
-        </table>   
+        </table>
+        <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">   
         
     </form>
 </head>
