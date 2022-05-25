@@ -8,8 +8,8 @@
     <h1>Menu principal</h1>
     <div>
     <ul>
-        <li><a href="cadastro_usuario.html">Cadastrar contato</a></li>
-        <li><a href="listar_usuario.php">Listar contatos</a></li>
+        <li><a href="cadastro_agenda.html">Cadastrar contato</a></li>
+        <li><a href="listar_agenda.php">Listar contatos</a></li>
     </ul>
     </div>
 </body>
