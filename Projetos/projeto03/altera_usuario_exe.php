@@ -16,13 +16,23 @@ if(move_uploaded_file($_FILES['foto']['tmp_name'],$target_dir.$fotoNome)){
 echo "<h1> alteraçao de dados </h1>";
 echo "<p> Nome Usuario:" . $nome . "<p>";
 
-if(strlen($fotoNome) > 0)
+if(strlen($fotoNome) > 0){
 $sql = "UPDATE usuario SET 
         nome_usuario='".$nome."',
         email_usuario='".$email."',
         telefone_usuario='".$telefone."'
+        foto_blob='".$fotoBlob."',
+        foto_nome='".$fotoNome."'
         WHERE id_usuario=".$id_usuario;
-
+}
+else
+{
+  $sql = "UPDATE usuario SET
+            nome_usuario='".$nome."',
+            email_usuario='".$email."',
+            telefone_usuario='".$telefone."'
+          WHERE id_usuario=".$id_usuario;
+}
 $result = mysqli_query($con, $sql);
 if($result)
    echo "Dados alterados com sucesso <br>";
