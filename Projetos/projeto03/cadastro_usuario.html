@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="cadastro_usuario.css">
 </head>
 <body>
-    <form action="cadastro_usuario.php" method="post">
+    <form action="cadastro_usuario.php" method="post" enctype="multipart/form-data">
         <table>
             <tr>
                 <th colspan="2">Cadastro de Clientes - IFSP</th>
@@ -25,6 +25,9 @@
             <tr>
                 <td colspan="2"><br><input type="submit" class="btnEnviar" value="Enviar"></td>
             </tr>
+            <input type="file" id="foto" name="foto" accept="image/*" />
+            <input id="btn" type="submit" value="Enviar">
+          
         </table>   
         
     </form>

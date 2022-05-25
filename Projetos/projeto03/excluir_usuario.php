@@ -19,4 +19,4 @@
     }
 ?>
 
-<a href="listar_usuarios.php">Voltar</a>
+<a href="listar_usuario.php">Voltar</a>

@@ -15,8 +15,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de usuário</title>
+<?php echo "<img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"])."' width='150' height='150'/>";
+
+?>
     <h1>Alteração de usuário</h1>
-        <form method="post" action="altera_usuario_exe.php">
+        <form method="post" action="altera_usuario_exe.php" enctype='multipart/form-data'>
+
         <table>
             <tr>
                 <th colspan="2">Cadastro de Clientes - IFSP</th>
@@ -39,7 +43,8 @@
             </tr>
         </table>
         <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">   
-        
+        <input type="file" id="foto" name="foto" accept="image/*" />
+
     </form>
 </head>
 <body>
