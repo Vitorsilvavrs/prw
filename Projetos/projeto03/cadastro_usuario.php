@@ -17,7 +17,7 @@ if(move_uploaded_file($_FILES['foto']['tmp_name'],$target_dir.$fotoNome)){
 
     $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario, foto_blob, foto_nome)
             VALUES ('".$nome_usuario."', '".$email_usuario."', '".$telefone_usuario."', '".$fotoBlob."', '".$fotoNome."')";
-
+        
     $result = mysqli_query($con, $sql);
     if ($result) {
         echo "Dados inseridos com sucesso!";

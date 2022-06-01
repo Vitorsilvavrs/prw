@@ -20,11 +20,11 @@ if(strlen($fotoNome) > 0){
 $sql = "UPDATE usuario SET 
         nome_usuario='".$nome."',
         email_usuario='".$email."',
-        telefone_usuario='".$telefone."'
+        telefone_usuario='".$telefone."',
         foto_blob='".$fotoBlob."',
         foto_nome='".$fotoNome."'
         WHERE id_usuario=".$id_usuario;
-}
+} 
 else
 {
   $sql = "UPDATE usuario SET

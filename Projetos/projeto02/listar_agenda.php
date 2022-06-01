@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Listar usuário</title>
-</head>
+</head> 
 
 <style>
     td {
@@ -22,14 +22,15 @@
 </style>
 
 <body>
-<table align="center">
+<table align="center" border="1">
         <tr>
-            <th colspan="12" id="titulo">Listagem de usuários</th>
+            <th colspan="13" id="titulo">Listagem de usuários</th>
         </tr>
         <tr>
             <th>ID</th>
             <th>Data</th>
             <th>Nome</th>
+            <th>Foto</th>
             <th>Apelido</th>
             <th>Telefone</th>
             <th>Celular</th>
@@ -46,6 +47,7 @@
                     <td>$row[id_agenda]</td>
                     <td>".implode("/",array_reverse(explode("-",$row['dt_cadastro'])))."</td>
                     <td><a href='altera_agenda.php?id_agenda=$row[id_agenda]'>$row[nome]</a></td>
+                    <td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"])."' width='150' height='150'/></td>
                     <td>$row[apelido]</td>
                     <td>$row[telefone]</td>
                     <td>$row[celular]</td>
