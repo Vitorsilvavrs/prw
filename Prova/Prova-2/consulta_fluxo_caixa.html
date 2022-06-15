@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar usuário</title>
+</head>
+
+<body>
+       <form action="consulta_fluxo_caixa.php" method="post">
+           
+            <table align="center">
+            <tr>
+                 <th colspan="2">Consulta fluxo de caixa</th>
+            </tr>
+            
+                  
+            <tr>
+                <td>
+                     <p>Tipo de consulta: </p>
+                </td>
+                <td><input type="radio" id="tipo" name="tipo" value="saldo">Saldo Total</td>
+                <td><input type="radio" id="tipo" name="tipo" value="saida">Total Saída</td>
+                <td><input type="radio" id="tipo" name="tipo" value="entrada">Total Entradas</td>
+
+            </tr>
+            <tr>
+                 <td colspan="2"><br><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

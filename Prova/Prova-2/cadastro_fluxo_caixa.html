@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar usuário</title>
+</head>
+
+<body>
+       <form action="cadastro_fluxo_caixa.php" method="post">
+           
+            <table align="center">
+            <tr>
+                 <th colspan="2">Cadastro de fluxo de caixa</th>
+            </tr>
+            
+            <tr>
+                 <td>
+                      <p>Data: </p>
+                 </td>
+                 <td><input type="date" name="data"></td>
+            </tr>
+          
+            <tr>
+                <td>
+                     <p>Tipo: </p>
+                </td>
+                <td><input type="radio" id="tipo" name="tipo" value="entrada">Entrada</td>
+                <td><input type="radio" id="tipo" name="tipo" value="saida">Saída</td>
+            </tr>
+
+            <tr>
+                 <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Valor:</p>
+                </td>
+                <td><input type="text" name="valor"></td>
+            </tr>
+           
+            <tr>
+                <td>
+                    <p>Histórico:</p>
+                </td>
+                <td><input type="text" name="historico"></td>
+            </tr>
+
+            <tr>
+                 <td>
+                     <p>Cheque</p>
+                 </td>
+                 <td><select name="cheque" id="cheque">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                 </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                 <td colspan="2"><br><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
