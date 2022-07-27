@@ -6,7 +6,7 @@
     $telefone_usuario = $_POST['telefone_usuario'];
     
     echo "Nome: $nome_usuario<br>E-mail: $email_usuario<br>Telefone: $telefone_usuario";
-
+//cadastro
     $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario)
             VALUES ('".$nome_usuario."', '".$email_usuario."', '".$telefone_usuario."')";
 
